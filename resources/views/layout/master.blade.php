@@ -18,6 +18,10 @@
             color: #FFF;
             background: #232323;
          }
+
+         .contain-padding{
+            padding-bottom: 80px;
+         }
       </style>
 
    </head>
@@ -57,7 +61,9 @@
         </div><!-- /.container-fluid -->
       </nav>
 
-      @yield('contain')
+      <div class="contain-padding">
+         @yield('contain')
+      </div>
 
       @yield('js')
       <div class="footer">
